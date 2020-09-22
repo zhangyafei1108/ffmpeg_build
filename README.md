@@ -6,3 +6,5 @@ ios的脚本
 
 第三方库编译：参考这里给出编译好的静态库，
 
+
+https://www.jianshu.com/p/f52c19b3175b
