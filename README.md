@@ -7,6 +7,8 @@ ios的脚本
 第三方库编译：参考这里给出编译好的静态库，
 
 
+https://juejin.im/post/6844904048303276045#heading-9  
+
 https://www.jianshu.com/p/f52c19b3175b
 
 
