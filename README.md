@@ -8,3 +8,7 @@ ios的脚本
 
 
 https://www.jianshu.com/p/f52c19b3175b
+
+
+
+libcur 编译
