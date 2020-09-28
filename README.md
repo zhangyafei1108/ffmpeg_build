@@ -11,6 +11,8 @@ ios的脚本
        # cc_default="clang"
          cc_default="gcc"
    fi
+   
+   
 2、上面演示的build_android.sh 脚本中使用的ndk版本是r14,那在FFmpeg 4.2版本中,你应该会遇到这个error:
 
   libavformat/udp.c: In function 'udp_set_multicast_sources':
