@@ -14,16 +14,16 @@ SCRATCH="scratch"
 THIN=`pwd`/"thin"
 SCRATCHPATH=`pwd`/"scratch"
 
-FDK_AAC=`pwd`/fdk-aac/fdk-aac-ios
-#LAME=`pwd`/lame/lame-ios
-OPENSSL=`pwd`/openssl
-#X264=`pwd`/libx264/ios-x264-lib
+FDK_AAC=`pwd`/thirdparty/fdk-aac-ios
+#LAME=`pwd`/thirdparty/lame-ios
+OPENSSL=`pwd`/thirdparty/openssl
+#X264=`pwd`/thirdparty/ios-x264-lib
 XMLPATH=`pwd`/xml
 export PATH=$PATH:$XMLPATH
 
  #
-CONFIGURE_FLAGS="--enable-cross-compile --disable-stripping  --enable-static --enable-dnsplus --disable-shared --disable-programs \
-                 --disable-everything --disable-doc --enable-pic --disable-symver  --enable-nonfree \
+CONFIGURE_FLAGS="--enable-cross-compile --disable-debug  --enable-static --enable-dnsplus --disable-shared --disable-programs \
+                 --disable-everything --disable-doc --enable-pic --disable-symver --enable-small  --enable-nonfree \
                  --enable-protocol=rtmp \
                  --enable-protocol=http \
                  --enable-protocol=https \
@@ -38,6 +38,7 @@ CONFIGURE_FLAGS="--enable-cross-compile --disable-stripping  --enable-static --e
                  --enable-demuxer=dash \
                  --enable-demuxer=h264 \
                  --enable-demuxer=aac \
+                 --enable-demuxer=wav \
                  --enable-demuxer=mpegts \
                  --enable-demuxer=mov \
 		 --enable-muxer=mp4 \
@@ -53,8 +54,9 @@ CONFIGURE_FLAGS="--enable-cross-compile --disable-stripping  --enable-static --e
                  --enable-decoder=aasc \
                  --enable-decoder=aac_latm \
                  --enable-parser=aac \
-		 --enable-gpl \
+                 --enable-gpl \
 		 --enable-parser=h264"
+#--enable-libx264 --enable-gpl --enable-encoder=libx264 \
 # avresample
 #CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-avresample"
 if [ "$FDK_AAC" ]

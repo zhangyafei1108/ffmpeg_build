@@ -14,10 +14,10 @@ SCRATCH="scratch"
 THIN=`pwd`/"thin"
 SCRATCHPATH=`pwd`/"scratch"
 
-FDK_AAC=`pwd`/fdk-aac/fdk-aac-ios
-#LAME=`pwd`/lame/lame-ios
-OPENSSL=`pwd`/openssl
-X264=`pwd`/libx264/ios-x264-lib
+FDK_AAC=`pwd`/thirdparty/fdk-aac-ios
+#LAME=`pwd`/thirdparty/lame-ios
+OPENSSL=`pwd`/thirdparty/openssl
+#X264=`pwd`/thirdparty/ios-x264-lib
 XMLPATH=`pwd`/xml
 export PATH=$PATH:$XMLPATH
 
@@ -38,6 +38,7 @@ CONFIGURE_FLAGS="--enable-cross-compile --disable-debug  --enable-static --enabl
                  --enable-demuxer=dash \
                  --enable-demuxer=h264 \
                  --enable-demuxer=aac \
+                 --enable-demuxer=wav \
                  --enable-demuxer=mpegts \
                  --enable-demuxer=mov \
 		 --enable-muxer=mp4 \
