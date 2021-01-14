@@ -33,6 +33,12 @@ https://juejin.im/post/6844904048303276045#heading-9
 
 https://www.jianshu.com/p/f52c19b3175b
 
-
-
 libcur 编译
+
+3、第三方库放置的已经编译好的，可以自己自行编译
+  openssl地址：https://github.com/x2on/OpenSSL-for-iPhone
+  x264地址：
+  mp3:
+  fek:
+  
+
